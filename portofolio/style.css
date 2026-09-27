@@ -201,6 +201,9 @@ li {
   border-radius: 10px;
   margin-bottom: 0;
   box-shadow: 3px 3px 0 color-mix(in srgb, var(--secondary) 18%, transparent);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .card:hover {
@@ -245,7 +248,10 @@ li {
   padding: 5px 12px;
   font-size: 0.85rem;
   border-radius: 5px;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .card-footer a:hover,
@@ -281,7 +287,9 @@ footer .action a {
   padding: 4px 10px;
   font-size: 0.8rem;
   border-radius: 5px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 footer .action a:hover {
