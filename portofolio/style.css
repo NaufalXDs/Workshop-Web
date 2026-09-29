@@ -7,10 +7,6 @@
   --soft-2: color-mix(in srgb, var(--background) 78%, var(--secondary));
 }
 
-.invisible-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -50,19 +46,18 @@ main {
   flex-direction: column;
 }
 
-.navbar {
+header {
   position: sticky;
   top: 10px;
   width: 75%;
   margin: 10px auto 0;
   z-index: 1000;
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px 20px;
   background-color: var(--primary);
   box-shadow: 0 4px 14px color-mix(in srgb, var(--text) 14%, transparent);
   border-radius: 20px 0 20px 0;
+  justify-content: center;
 }
 
 .navbar ul {
@@ -190,7 +185,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: var(--soft-2);
+  background-color: var(--soft);
   border: 1px solid var(--line);
   padding: 14px 18px;
   border-radius: 10px;
@@ -304,11 +299,12 @@ main {
 }
 
 @media (max-width: 640px) {
-  .navbar {
+  header {
     width: 80%;
     margin: 0;
     border-radius: 0 50px 50px 0;
     margin-top: 10px;
+    justify-content: center;
   }
 
   .navbar ul {
