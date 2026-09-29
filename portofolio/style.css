@@ -3,24 +3,18 @@
   --background: #f6f4f3;
   --primary: #ff5e00;
   --secondary: #1b2720;
-  --accent: #ff3d40;
-  --warm: #1f150c;
-  --muted: color-mix(in srgb, var(--text) 64%, var(--background));
   --soft: color-mix(in srgb, var(--background) 82%, var(--warm));
   --soft-2: color-mix(in srgb, var(--background) 78%, var(--secondary));
-  --line: color-mix(in srgb, var(--text) 18%, transparent);
-  --line-strong: color-mix(in srgb, var(--text) 36%, transparent);
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 60px;
 }
 
 body {
@@ -47,7 +41,7 @@ li {
   list-style: none;
 }
 
-.shell {
+main {
   width: min(100%, 980px);
   padding: 0 clamp(18px, 5vw, 40px) 0px;
   margin: 0 auto;
@@ -88,7 +82,7 @@ li {
 .navbar ul li a:hover {
   background-color: color-mix(in srgb, var(--secondary) 18%, transparent);
   border-radius: 8px;
-  color: white;
+  color: var(--secondary);
   transform: translateY(-2px);
 }
 
