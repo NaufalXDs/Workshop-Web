@@ -332,10 +332,12 @@ footer {
 @media (max-width: 640px) {
   header {
     width: 80%;
-    margin: 0;
     border-radius: 0 50px 50px 0;
     margin-top: 10px;
     justify-content: center;
+    top: 8px;
+    margin: 8px 12px 0 0;
+    padding: 8px 10px;
   }
 
   .navbar ul {
@@ -390,12 +392,20 @@ footer {
     width: 80%;
     border-radius: 50px 0 0 50px;
     display: flex;
+    margin: 20px 0 10px auto;
+  }
+
+  .footer action {
     margin-left: auto;
-    margin: 0;
-    margin-bottom: 10px;
+    gap: 6px;
   }
 
   .footer p {
-    margin-left: 30px;
+    margin: 0;
+  }
+
+  .footer .action {
+    margin-left: auto;
+    gap: 6px;
   }
 }
